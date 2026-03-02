@@ -1,1 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #3a0ca3, #7209b7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    width: 95%;
+    max-width: 1100px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Cabeçalho */
+header {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Menu */
+nav {
+    background: #457b9d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    padding: 15px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd60a;
+}
+
+/* Layout principal */
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Colunas */
+.esquerda, .direita {
+    width: 25%;
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.conteudo {
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.conteudo h2 {
+    margin-bottom: 15px;
+}
+
+/* Botão */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #7209b7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #560bad;
+}
+
+/* Rodapé */
+footer {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* RESPONSIVO (Celular) */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .esquerda, .conteudo, .direita {
+        width: 100%;
+    }
+}
